@@ -1067,3 +1067,51 @@ Linuxではファイルに別名をつけることができ、別名をつける
     ```
 
 ---
+
+## 32 Day3のまとめ
+
+- できるようになったこと
+  - テキストファイルとバイナリファイルについて理解した
+  - ファイルの中身を表示できるようになった
+  - ファイルを作成できるようになった
+  - ファイルの削除ができるようになった
+  - ファイルの移動ができるようになった
+  - ファイルをコピーできるようになった
+  - リンクをはれるようになった
+  - ファイルを検索できるようになった
+
+- やってみよう
+  - index.htmlという空ファイルを作成してみよう
+  
+    ```bash
+    $cd ~/work
+    $touch index.html
+    ```
+
+  - index.htmlの名前をhome.htmlに変更してみよう
+
+    ```bash
+    $mv index.html home.html
+    ```
+
+  - publicというディレクトリを作成し、その中にpractice.txtというファイルを作成しよう
+
+    ```bash
+    $mkdir public
+    $cd public/
+    $touch practice.txt
+    ```
+
+  - findコマンドを使って上記で作成したpractice.txtファイルを見つけよう
+  
+    ```bash
+    $find . -name practice.txt -print
+    ```
+
+  - Day3で作成した全ファイル・ディレクトリを削除しよう
+
+    ```bash
+    $rm -r ~/work
+    ```
+
+---
